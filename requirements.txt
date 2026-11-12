@@ -1,0 +1,16 @@
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+scipy>=1.11
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27
+joblib>=1.3
+pytest>=8.0
+# Optional: SHAP explanations. If shap is missing, the code falls back to
+# permutation importance (disclosed in metrics.json / README).
+shap>=0.44
+# Optional: XGBoost. If xgboost is missing (or its wheel won't download),
+# the code falls back to sklearn's HistGradientBoostingClassifier, which
+# needs no extra dependency. Uncomment to prefer XGBoost:
+# xgboost>=2.0
